@@ -1,0 +1,59 @@
+@import "../vars"
+@import "../mixins"
+
+.banner
+
+    &__container
+        background-color: $color-white
+        background-image: url("../img/banner_index.jpg")
+        border-radius: 70px
+
+    &__text
+        width: 434px
+        margin-left: 50px
+        padding: 208px 0 208px
+
+    &__title
+        margin-bottom: 18px
+        font-family: $fontFamily-DMSerifDisplay
+        font-size: 65px
+        font-style: normal
+        font-weight: $fontWeightRegular
+
+    &__paragraph
+        margin-bottom: 21px
+        font-style: normal
+        font-weight: $fontWeightRegular
+
+    &__btn
+        padding: 25px 47px
+        border-radius: 18px
+        background: $color-black
+        box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35)
+        transition: background-color 1s ease
+        &:hover,
+        &:active
+            background: $color-white
+
+        &-text
+            font-family: $fontFamily-Jost
+            font-size: 18px
+            font-style: normal
+            font-weight: $fontWeightSemibold
+            line-height: 125%
+            color: $color-white
+            letter-spacing: 0.36px
+            transition: color 1s ease
+
+        & svg
+            margin-top: 2px
+            margin-left: 8px
+
+        &:hover .banner__btn-text,
+        &:active .banner__btn-text
+            color: $color-black
+
+        &:hover svg path,
+        &:active svg path
+            fill: $color-black
+            stroke: $color-black

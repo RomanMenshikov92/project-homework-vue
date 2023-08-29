@@ -1,0 +1,32 @@
+@import "../vars"
+@import "../mixins"
+
+.header
+  padding: 53px 0 51px
+
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__logo
+    display: inline-block
+
+  &__menu-list
+    display: flex
+    flex-direction: row
+    gap: 47px
+    margin-bottom: 5px
+
+  &__menu-link
+    display: inline-block
+    font-size: 20px
+    font-style: normal
+    font-weight: $fontWeightRegular
+    line-height: 125%
+    color: $color-black
+    text-align: center
+    transition: color 1s ease
+    &:hover,
+    &:active
+      color: $color-begie-dark

@@ -1,0 +1,104 @@
+@import "../vars"
+@import "../mixins"
+
+.articlenews
+    padding-top: 95px
+    padding-bottom: 73px
+
+    &__title
+        margin-bottom: 12px
+        text-align: center
+        font-family: $fontFamily-DMSerifDisplay
+        font-style: normal
+        font-weight: $fontWeightRegular
+
+    &__paragraph
+        margin: 0 auto
+        width: 811px
+        text-align: center
+        font-style: normal
+        font-weight: $fontWeightRegular
+
+    &__list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 27px
+        margin-top: 50px
+
+    &__item
+        position: relative
+        z-index: 5
+        padding: 21px
+        border-radius: 62px
+        border: 1px solid $color-gray-light
+        box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25)
+
+    &__item:nth-child(2n)
+        border-radius: 62px
+        border: 1px solid $color-gray-light
+        background: $color-begie-light
+        box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25)
+
+    &__article
+        display: flex
+        flex-direction: column
+        min-height: 478px
+
+    &__wrapper
+        position: relative
+
+        &-img
+            border-top-right-radius: 44px
+            border-top-left-radius: 44px
+            width: 100%
+
+        &-text
+            position: absolute
+            left: 19px
+            bottom: 28px
+            padding: 6px 9px 8px 11px
+            border-radius: 8px 8px 8px 0px
+            color: $color-gray
+            font-size: 16px
+            font-style: normal
+            font-weight: $fontWeightRegular
+            line-height: 150%
+            letter-spacing: 0.16px
+            text-transform: capitalize
+            background: $color-white
+
+    &__subtitle
+        padding-top: 7px
+        width: 290px
+        font-family: $fontFamily-DMSerifDisplay
+        font-size: 25px
+        font-style: normal
+        font-weight: $fontWeightRegular
+        letter-spacing: 0.5px
+
+    &__footer
+        margin-top: auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 12px
+
+    &__date
+        color: $color-gray
+        font-size: 16px
+        font-style: normal
+        font-weight: $fontWeightRegular
+        line-height: 150%
+        letter-spacing: 0.16px
+        text-transform: capitalize
+
+    &__item:nth-child(2n) .articlenews__article .articlenews__footer svg circle
+        fill: white
+
+    &__item:nth-child(2n) .articlenews__article .articlenews__footer .articlenews__link-btn:hover svg circle
+        fill: $color-begie-dark
+
+    &__link-btn
+        &:hover svg circle
+            fill: $color-begie-dark

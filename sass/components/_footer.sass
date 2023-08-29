@@ -1,0 +1,83 @@
+@import "../vars"
+@import "../mixins"
+
+.footer
+    padding: 24px 0
+
+    &__container
+        display: flex
+        justify-content: space-between
+        gap: 101px
+
+    &__logo
+        display: inline-block
+        margin-bottom: 12px
+
+    &__text
+        width: 393px
+        margin-bottom: 33px
+        color: $color-gray
+        font-size: 22px
+        font-style: normal
+        font-weight: $fontWeightRegular
+        line-height: 150%
+        letter-spacing: 0.22px
+
+    &__list-social
+        display: flex
+        gap: 54px
+
+    &__link-social:hover svg path,
+    &__link-social:active svg path
+        fill: $color-begie-dark
+
+    &__pages
+        margin-right: 277px
+
+    &__subtitle
+        margin-bottom: 10px
+        font-family: $fontFamily-DMSerifDisplay
+        font-size: 25px
+        font-style: normal
+        font-weight: $fontWeightRegular
+
+    &__list
+        display: flex
+        flex-direction: column
+
+    &__link
+        color: #4D5053
+        font-family: Jost
+        font-size: 22px
+        font-style: normal
+        font-weight: $fontWeightRegular
+        line-height: 300%
+        letter-spacing: 0.22px
+        transition: color 1s ease
+        &:hover,
+        &:active
+            color: $color-begie-dark
+
+    &__address
+        margin-top: 25px
+        margin-bottom: 15px
+
+    &__address,
+    &__phone
+        width: 258px
+        color: $color-gray
+        font-size: 22px
+        font-style: normal
+        font-weight: $fontWeightRegular
+        line-height: 150%
+        letter-spacing: 0.22px
+
+    &__email
+        margin-bottom: 18px
+        width: 258px
+        color: $color-gray
+        font-size: 22px
+        font-style: normal
+        font-weight: $fontWeightRegular
+        line-height: 300%
+        letter-spacing: 0.22px

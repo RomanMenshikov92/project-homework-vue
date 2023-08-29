@@ -1,0 +1,55 @@
+@import "../vars"
+@import "../mixins"
+
+.number
+    padding-top: 153px
+    padding-bottom: 153px
+    background-color: $color-begie-light
+
+    &__list
+        position: relative
+        display: flex
+        justify-content: space-between
+        margin: 0 60px
+
+    &__item
+        position: relative
+        display: inline-block
+        text-align: center
+
+    &__item:nth-child(2)
+        margin-left: -30px
+
+    &__item:nth-child(1)::before
+        content: ""
+        position: absolute
+        right: -55px
+        height: 100%
+        border-left: 1px solid $color-begie-dark
+
+    &__item:nth-child(2)::before,
+    &__item:nth-child(3)::before
+        content: ""
+        position: absolute
+        right: -79px
+        height: 100%
+        border-left: 1px solid $color-begie-dark
+
+    &__strong
+        display: inline-block
+        margin-bottom: 14px
+        font-family: $fontFamily-DMSerifDisplay
+        font-size: 85px
+        font-style: normal
+        font-weight: $fontWeightRegular
+        line-height: 125%
+        letter-spacing: 1.7px
+        color: $color-begie-dark
+
+    &__text
+        font-size: 22px
+        font-style: normal
+        font-weight: $fontWeightRegular
+        line-height: 150%
+        letter-spacing: 0.22px
+        color: $color-gray

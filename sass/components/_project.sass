@@ -1,0 +1,68 @@
+@import "../vars"
+@import "../mixins"
+
+.project
+    padding-top: 98px
+    padding-bottom: 102px
+
+    &__title
+        margin-bottom: 8px
+        text-align: center
+        font-family: $fontFamily-DMSerifDisplay
+        font-style: normal
+        font-weight: $fontWeightRegular
+
+    &__paragraph
+        margin: 0 auto
+        width: 737px
+        text-align: center
+        font-style: normal
+        font-weight: $fontWeightRegular
+
+    &__list
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        margin-top: 91px
+        column-gap: 104px
+        row-gap: 43px
+
+    &__item
+        min-height: 631px
+
+    &__link-btn
+        &:hover svg circle
+            fill: $color-begie-dark
+
+    &__wrapper-img-top-right
+        border-top-right-radius: 80px
+
+    &__wrapper-img-top-left
+        border-top-left-radius: 80px
+
+    &__wrapper-img-bottom-right
+        border-bottom-right-radius: 80px
+
+    &__wrapper-img-bottom-left
+        border-bottom-left-radius: 80px
+
+    &__info
+        display: flex
+        justify-content: space-between
+        margin-top: 24px
+
+        &-text-name
+            color: $color-black
+            font-family: $fontFamily-DMSerifDisplay
+            font-size: 25px
+            font-style: normal
+            font-weight: $fontWeightRegular
+            line-height: 125%
+            letter-spacing: 0.5px
+
+        &-text-subname
+            font-style: normal
+            font-weight: $fontWeightRegular
+
+    // &__link-btn
+    //     display: block
+    //     padding-bottom: 10px
