@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tasks Vue.JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1 class="title">Homework №1</h1>
+        <div class="tasks">
+          <div class="task_one">
+            <h2 class="subtitle">Task №1</h2>
+            <button class="btn" @click="btnTextReverse()">{{ btnText }}</button>
+          </div>
+          <div class="task_two_and_three">
+            <h2 class="subtitle">Task №2</h2>
+            <button class="btn" @click="addItem()">Создание элементов в списке</button>
+            <button class="btn" @click="clearItems()">Очистка</button>
+            <ul class="list">
+              <h3 v-if="this.listItems.length > 0" class="list__title">{{ newListMessage }}</h3>
+              <li class="item" v-for="(item, index) in listItems" :key="index" @click="removeItem(index)">{{ item.message }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+      let app = new Vue({
+        el: "#app",
+        data: {
+          btnText: "Перевернуть",
+          listItems: [],
+          elCounter: 0,
+          newListMessage: "Новый список",
+        },
+        methods: {
+          btnTextReverse() {
+            this.btnText = [...this.btnText].reverse().join("");
+          },
+          addItem() {
+            this.listItems.push({ message: "№" + this.elCounter + " элемент" });
+            this.elCounter++;
+          },
+          clearItems() {
+            this.listItems = [];
+            this.elCounter = 0;
+          },
+          removeItem(index) {
+            this.listItems.splice(index, 1);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
