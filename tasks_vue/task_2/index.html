@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tasks Vue.JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1 class="title">Homework №2</h1>
+        <div class="tasks">
+          <div class="task_one">
+            <h2 class="subtitle">Task №1</h2>
+            <div class="name">Список товаров</div>
+            <button class="btn" @click="sortByPriceDefault">Сортировка по умолчанию</button>
+            <button class="btn" @click="sortByPriceAsc">Сортировка по возрастанию цены</button>
+            <button class="btn" @click="sortByPriceDesc">Сортировка по убыванию цены</button>
+            <ul class="list">
+              <div class="name-price">Название / Цена</div>
+              <li class="item" v-for="(product, id) in sortedProducts" :key="id">{{ product.name }} / {{ product.price }} рублей</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+      let app = new Vue({
+        el: "#app",
+        data: {
+          products: [
+            { id: 1, name: "BMW X5", price: 2500000 },
+            { id: 2, name: "Kia Rio", price: 1500000 },
+            { id: 3, name: "Lada Vesta", price: 1300000 },
+            { id: 4, name: "Opel Astra", price: 1800000 },
+            { id: 5, name: "Skoda Octavia", price: 1700000 },
+            { id: 6, name: "Haval M6", price: 1800000 },
+            { id: 7, name: "Chery Tiggo 8", price: 2900000 },
+            { id: 8, name: "Hynday Solaris", price: 1350000 },
+            { id: 9, name: "Renult Logan", price: 1400000 },
+            { id: 10, name: "Volkswagen Tiguan", price: 2700000 },
+            { id: 11, name: "Mersedes-Benz G-class", price: 5000000 },
+          ],
+          sortBy: "",
+        },
+        computed: {
+          sortedProducts() {
+            let sortedArray = [...this.products];
+            if (this.sortBy === "asc") {
+              return sortedArray.sort((a, b) => a.price - b.price);
+            } else if (this.sortBy === "desc") {
+              return sortedArray.sort((a, b) => b.price - a.price);
+            } else {
+              return sortedArray;
+            }
+          },
+        },
+
+        methods: {
+          sortByPriceDefault() {
+            this.sortBy = "";
+          },
+          sortByPriceAsc() {
+            this.sortBy = "asc";
+          },
+          sortByPriceDesc() {
+            this.sortBy = "desc";
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
