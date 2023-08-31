@@ -1,7 +1,5 @@
 # Фреймворк Vue.js
 
-![CI](https://github.com/RomanMenshikov92/project-homework-vue/actions/workflows/web.yml/badge.svg)
-
 ## Домашнее задание №1
 
 Часть 1: Данное задание направлено на подготовку проекта к итоговой аттестации.
