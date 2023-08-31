@@ -1,5 +1,7 @@
 # Фреймворк Vue.js
 
+### [Ссылка на GitHub Pages](https://romanmenshikov92.github.io/project-homework-vue/)
+
 ## Домашнее задание №1
 
 Часть 1: Данное задание направлено на подготовку проекта к итоговой аттестации.
