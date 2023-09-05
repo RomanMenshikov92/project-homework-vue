@@ -402,6 +402,31 @@ a {
 /*font-family*/
 /*font-normal*/
 /*color*/
+.banner-blog-details {
+  position: relative;
+  display: flex;
+  min-height: 340px;
+  background-image: url("../img/banner_blog-details.jpg");
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*container*/
+/*breakpoint*/
+/*font-weight*/
+/*font-family*/
+/*font-normal*/
+/*color*/
+/* stylelint-disable */
+/* stylelint-disable */
+/*container*/
+/*breakpoint*/
+/*font-weight*/
+/*font-family*/
+/*font-normal*/
+/*color*/
 .project {
   padding-top: 98px;
   padding-bottom: 102px;
@@ -463,6 +488,205 @@ a {
 .project__info-text-subname {
   font-style: normal;
   font-weight: 400;
+}
+
+/*container*/
+/*breakpoint*/
+/*font-weight*/
+/*font-family*/
+/*font-normal*/
+/*color*/
+/* stylelint-disable */
+/* stylelint-disable */
+/*container*/
+/*breakpoint*/
+/*font-weight*/
+/*font-family*/
+/*font-normal*/
+/*color*/
+.blogs-list {
+  margin-top: 100px;
+}
+.blogs-list-content {
+  padding: 25px;
+  display: flex;
+  gap: 52px;
+  justify-content: space-between;
+}
+
+.blogs-container {
+  width: 67%;
+}
+
+.tags-container {
+  width: 33%;
+}
+
+.blog {
+  cursor: pointer;
+  margin: 0 0 45px 0;
+}
+.blog-content-img {
+  width: 100%;
+  border-radius: 50px;
+}
+.blog-content-img-wrapper {
+  margin-bottom: 46px;
+}
+.blog-header {
+  margin-bottom: 21px;
+}
+.blog-header__text {
+  color: #292F36;
+  font-family: DM Serif Display, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.blog-date__text {
+  color: #4D5053;
+  font-family: Jost, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+.blog-crumbs__text {
+  color: #4D5053;
+  font-family: Jost, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+.blog-text {
+  color: #4D5053;
+  font-family: Jost, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.blog-details-content-top {
+  display: flex;
+  padding: 53px 227px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #F4F0EC;
+  margin-bottom: 27px;
+}
+.blog-details-content-top__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-details-content-top__content__text {
+  color: #CDA274;
+  text-align: center;
+  font-family: DM Serif Display, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
+.blog-details-content-top-main {
+  margin-bottom: 44px;
+}
+.blog-details-content-top-main__header {
+  color: #292F36;
+  font-family: DM Serif Display, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.blog-details-content-top-main__text {
+  color: #4D5053;
+  font-family: Jost, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.blog-details-content-top-sub-img {
+  border-radius: 50px;
+  width: 100%;
+}
+.blog-details-content-top-sub-img-wrapper {
+  margin-bottom: 35px;
+}
+.blog-details-content-top-sub__text {
+  color: #4D5053;
+  font-family: Jost, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+.tag {
+  padding: 9px 30px;
+  border-radius: 10px;
+  background: #F4F0EC;
+  color: #292F36;
+  text-align: center;
+  font-family: Jost, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+  cursor: pointer;
+}
+.tag:hover {
+  background: #292F36;
+  color: #fff;
+  text-align: center;
+  font-family: Jost, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+}
+.tag-clicked {
+  background: #292F36;
+  color: #fff;
+  text-align: center;
+  font-family: Jost, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
 }
 
 /*container*/
