@@ -24,7 +24,7 @@ Vue.component("blogs-list", {
         {
           id: 2,
           header: "#2 Let’s Get Solution for Building Construction Work",
-          img: "img/article_1.jpg",
+          img: "img/article_1.png",
           date: "26 December,2023",
           crumbs: "Interior / Home / Decore",
           text: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable. Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.",
@@ -32,14 +32,14 @@ Vue.component("blogs-list", {
           detailsHeader: "#2 Design sprints are great",
           detailsText:
             "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered. <br><br>\n                    1. Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br><br>\n                    2. Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br><br>\n                    3. Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br><br>",
-          detailsImg: "img/article_2.jpg",
+          detailsImg: "img/article_2.png",
           detailsSubText:
             "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
         },
         {
           id: 3,
           header: "#3 Let’s Get Solution for Building Construction Work",
-          img: "img/article_3.jpg",
+          img: "img/article_3.png",
           date: "26 December,2022",
           crumbs: "Interior / Home / Decore",
           text: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable. Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.",
@@ -47,7 +47,7 @@ Vue.component("blogs-list", {
           detailsHeader: "#3 Design sprints are great",
           detailsText:
             "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered. <br><br>\n                    1. Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br><br>\n                    2. Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br><br>\n                    3. Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br><br>",
-          detailsImg: "img/article_4.jpg",
+          detailsImg: "img/article_4.png",
           detailsSubText:
             "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
         },
@@ -204,7 +204,7 @@ Vue.component("blog-details", {
 });
 
 let app = new Vue({
-  el: "#blogApp",
+  el: "#App_blog",
   data: {},
 
   methods: {},

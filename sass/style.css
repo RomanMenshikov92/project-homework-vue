@@ -538,7 +538,7 @@ a {
 }
 .blog-header__text {
   color: #292F36;
-  font-family: DM Serif Display, sans-serif;
+  font-family: "DMSerifDisplay", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -552,7 +552,6 @@ a {
 }
 .blog-date__text {
   color: #4D5053;
-  font-family: Jost, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -562,7 +561,6 @@ a {
 }
 .blog-crumbs__text {
   color: #4D5053;
-  font-family: Jost, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -572,7 +570,6 @@ a {
 }
 .blog-text {
   color: #4D5053;
-  font-family: Jost, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -594,7 +591,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.blog-details-content-top__content__text {
+.blog-details-content-top__text {
   color: #CDA274;
   text-align: center;
   font-family: DM Serif Display, sans-serif;
@@ -604,10 +601,10 @@ a {
   line-height: 125%;
   letter-spacing: 0.5px;
 }
-.blog-details-content-top-main {
+.blog-details-content-main {
   margin-bottom: 44px;
 }
-.blog-details-content-top-main__header {
+.blog-details-content-main__header {
   color: #292F36;
   font-family: DM Serif Display, sans-serif;
   font-size: 50px;
@@ -617,7 +614,7 @@ a {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-.blog-details-content-top-main__text {
+.blog-details-content-main__text {
   color: #4D5053;
   font-family: Jost, sans-serif;
   font-size: 22px;
@@ -626,14 +623,14 @@ a {
   line-height: 150%;
   letter-spacing: 0.22px;
 }
-.blog-details-content-top-sub-img {
+.blog-details-content-sub-img {
   border-radius: 50px;
   width: 100%;
 }
-.blog-details-content-top-sub-img-wrapper {
+.blog-details-content-sub-img-wrapper {
   margin-bottom: 35px;
 }
-.blog-details-content-top-sub__text {
+.blog-details-content-sub__text {
   color: #4D5053;
   font-family: Jost, sans-serif;
   font-size: 22px;
