@@ -1,3 +1,5 @@
+# vuecli_homework
+
 # Фреймворк Vue.js
 
 ### [Ссылка на GitHub Pages](https://romanmenshikov92.github.io/project-homework-vue/)
@@ -36,3 +38,38 @@ PS: С макетом можете плотно не работать, а реа
 1. blog-details (компонент отображения подробной информации о статье)
 2. blog (компонент отображения краткой информации о статье в компоненте blogs-list)
 3. blogs-list (компонент который выводит список из компонент blog и фильтрует его на основе выбранного тега)
+
+## Домашнее задание №4
+
+Vue cli
+Установить и настроить Vue CLI
+Перевести свой проект на vue cli
+Все компоненты которые создали с помощью vue.components необходимо переделать на синтаксис Vue CLI
+
+## Project setup
+
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
