@@ -4,11 +4,12 @@
     <!-- <AppHomePage></AppHomePage> -->
     <!-- <AppBlogPage></AppBlogPage> -->
     <!-- <AppBlogDetailsPage></AppBlogDetailsPage> -->
-    <div class="products">
+    <AppProjectPage></AppProjectPage>
+    <!-- <div class="products">
       <div class="products__container container">
         <ProductDetails />
       </div>
-    </div>
+    </div> -->
     <AppFooter></AppFooter>
   </div>
 </template>
@@ -18,7 +19,8 @@ import AppHeader from './components/AppHeader.vue';
 // import AppHomePage from './view/AppHomePage.vue';
 // import AppBlogPage from './view/AppBlogPage.vue';
 // import AppBlogDetailsPage from './view/AppBlogDetailsPage.vue';
-import ProductDetails from '@/components/ProductDetails.vue';
+// import ProductDetails from '@/components/ProductDetails.vue';
+import AppProjectPage from './view/AppProjectPage.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
@@ -28,7 +30,8 @@ export default {
     // AppHomePage,
     // AppBlogPage,
     // AppBlogDetailsPage,
-    ProductDetails,
+    // ProductDetails,
+    AppProjectPage,
     AppFooter,
   },
 };
@@ -42,14 +45,14 @@ export default {
 // @import "./assets/sass/_mixins"
 // @import "./assets/sass/style"
 @import "./assets/sass/style"
-.products
-  padding: 100px 0
-  background-color: #ffe4b5
+// .products
+//   padding: 100px 0
+//   background-color: #ffe4b5
 
-.products__container
-  display: grid
-  grid-template-columns: 1fr
-  justify-items: center
-  align-items: center
-  gap: 10px
+// .products__container
+//   display: grid
+//   grid-template-columns: 1fr
+//   justify-items: center
+//   align-items: center
+//   gap: 10px
 </style>
