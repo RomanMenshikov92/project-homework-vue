@@ -4,6 +4,6 @@ module.exports = defineConfig({
   publicPath:
     process.env.NODE_ENV === 'production'
       ? '/project-homework-vue/'
-      : '/project-homework-vue',
+      : '/',
   transpileDependencies: true,
 });
