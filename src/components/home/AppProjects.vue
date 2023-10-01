@@ -11,6 +11,7 @@
           v-for="(project, i) in projects"
           :key="i"
           :project="project"
+          :i="i"
         ></AppOneProject>
       </ul>
     </div>

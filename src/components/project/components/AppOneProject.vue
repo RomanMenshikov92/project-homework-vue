@@ -3,7 +3,7 @@
     <div class="project__wrapper">
       <img
         class="project__wrapper-img"
-        :class="getImgClass(0)"
+        :class="getImgClass(i)"
         :src="project.img"
         :alt="project.title"
       />
