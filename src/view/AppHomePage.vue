@@ -3,30 +3,23 @@
     <AppHomeBanner></AppHomeBanner>
     <AppProject></AppProject>
     <AppHomeNumber></AppHomeNumber>
-    <AppArticleNews></AppArticleNews>
+    <AppBlogs></AppBlogs>
   </div>
 </template>
 
 <script>
-import AppHomeBanner from '@/components/AppHomeBanner.vue';
-import AppProject from '@/components/AppProject.vue';
-import AppHomeNumber from '@/components/AppHomeNumber.vue';
-import AppArticleNews from '@/components/AppArticleNews.vue';
+import AppHomeBanner from '@/components/home/AppHomeBanner.vue';
+import AppProject from '@/components/home/AppProjects.vue';
+import AppHomeNumber from '@/components/home/AppHomeNumber.vue';
+import AppBlogs from '@/components/home/AppBlogs.vue';
 
 export default {
   name: 'AppHomePage',
-  data() {
-    return {};
-  },
-  mounted() {},
-
-  methods: {},
-
   components: {
     AppHomeBanner,
     AppProject,
     AppHomeNumber,
-    AppArticleNews,
+    AppBlogs,
   },
 };
 </script>

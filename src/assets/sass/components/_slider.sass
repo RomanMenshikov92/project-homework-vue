@@ -1,0 +1,58 @@
+@import "../vars"
+@import "../mixins"
+
+.project-details__slider
+    display: flex
+    flex-direction: column
+    gap: 15px
+    margin-top: 76px
+    margin-bottom: 76px
+
+    &-wrapper
+        position: relative
+        z-index: 1
+        transition: all 0.3s ease
+        &-img
+            display: none
+            border-radius: 60px
+
+        &-search
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            z-index: 2
+            cursor: pointer
+
+    &-pagination
+        display: flex
+        justify-content: center
+        gap: 5px
+        &-element
+            cursor: pointer
+            border: 1px solid #292f36
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 1em
+            width: 1em
+            border-radius: 50%
+
+.show
+    display: unset
+
+.current
+    background: #292f36
+    color: #e7e7e7
+
+.large
+    position: absolute
+    display: flex
+    justify-content: center
+    /* top: 50%; */
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 90%
+    height: 100%
+    z-index: 10
+    filter: drop-shadow(5px 5px 10px #292f36)

@@ -1,0 +1,29 @@
+@import "../vars"
+@import "../mixins"
+
+.pagination
+    display: flex
+    justify-content: center
+    gap: 20px
+    padding: 25px 0
+
+    &__wrapper
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        color: black
+        width: 52px
+        height: 52px
+        border: 1px solid $color-begie-dark
+        border-radius: 50%
+        transition: background-color 1s ease
+        &:hover
+            background-color: $color-begie-dark
+.current
+    background: #f4f0ec
+    border-color: #f4f0ec
+.next
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='53' height='52' viewBox='0 0 53 52' fill='none'%3e%3cpath d='M23.5571 32L29.5 25.3143L23.5571 18.6286' stroke='%23292F36' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e")
+    background-size: 100% 100%

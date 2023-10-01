@@ -2,7 +2,7 @@
 
 # Фреймворк Vue.js
 
-### [Ссылка на GitHub Pages](https://romanmenshikov92.github.io/project-homework-vue/)
+<!-- ### [Ссылка на GitHub Pages](https://romanmenshikov92.github.io/project-homework-vue/) -->
 
 ## Домашнее задание №1
 
@@ -62,6 +62,17 @@ Vue
 Создать страницу https://www.figma.com/file/okdYD45Tj2JpKsNASccUmf/Interior-Design-Webflow-Website-Template-(Community)-(Copy)-(Copy)?type=design&node-id=993-13&mode=design&t=GgrNWje1dd3mkCbQ-0
 В блоке categoreis необходимо сделать переключение проектов на ваше усмотрение
 Проект один в один создавать не нужно, работаем исключительно с кодом, любая стилистика уходит на второй план, если нет времени на добавление стилей, создавайте логику сайта, а вёрстку можно будет доделать и позже
+
+## Домашнее задание №7
+
+Установить VueX добавить к проекту
+Приступаем к вёрстке новой страницы project details
+Информацию про описание проекта вынести в state
+Слайдер можно сделать самостоятельно с помощью vue или сделать с помощью bootstrap
+
+## Домашнее задание №8
+
+Навигация в приложении Vue-Router
 
 ## Project setup
 

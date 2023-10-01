@@ -1,26 +1,14 @@
 <template>
   <div class="wrapper">
-    <AppProjectBanner></AppProjectBanner>
-    <AppOurProject></AppOurProject>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import AppProjectBanner from '@/components/AppProjectBanner.vue';
-import AppOurProject from '@/components/AppOurProject.vue';
-
 export default {
   name: 'AppProjectPage',
   data() {
     return {};
-  },
-  mounted() {},
-
-  methods: {},
-
-  components: {
-    AppProjectBanner,
-    AppOurProject,
   },
 };
 </script>

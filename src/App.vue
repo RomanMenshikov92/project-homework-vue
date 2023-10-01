@@ -1,58 +1,27 @@
 <template>
   <div id="app">
     <AppHeader></AppHeader>
-    <!-- <AppHomePage></AppHomePage> -->
-    <!-- <AppBlogPage></AppBlogPage> -->
-    <!-- <AppBlogDetailsPage></AppBlogDetailsPage> -->
-    <AppProjectPage></AppProjectPage>
-    <!-- <div class="products">
-      <div class="products__container container">
-        <ProductDetails />
-      </div>
-    </div> -->
+    <router-view></router-view>
     <AppFooter></AppFooter>
   </div>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue';
-// import AppHomePage from './view/AppHomePage.vue';
-// import AppBlogPage from './view/AppBlogPage.vue';
-// import AppBlogDetailsPage from './view/AppBlogDetailsPage.vue';
-// import ProductDetails from '@/components/ProductDetails.vue';
-import AppProjectPage from './view/AppProjectPage.vue';
-import AppFooter from './components/AppFooter.vue';
+import store from '@/store';
+import AppHeader from './components/header/AppHeader.vue';
+import AppFooter from './components/footer/AppFooter.vue';
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    // AppHomePage,
-    // AppBlogPage,
-    // AppBlogDetailsPage,
-    // ProductDetails,
-    AppProjectPage,
     AppFooter,
   },
+  store,
 };
 </script>
 
 <style lang="sass">
 @import "./assets/sass/_vars"
-// @import "./assets/sass/_mixins"
-// @import "./assets/sass/_setting"
-// @import "./assets/sass/_fonts"
-// @import "./assets/sass/_mixins"
-// @import "./assets/sass/style"
 @import "./assets/sass/style"
-// .products
-//   padding: 100px 0
-//   background-color: #ffe4b5
-
-// .products__container
-//   display: grid
-//   grid-template-columns: 1fr
-//   justify-items: center
-//   align-items: center
-//   gap: 10px
 </style>
