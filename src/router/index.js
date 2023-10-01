@@ -54,7 +54,7 @@ const routes = [
     ],
   },
   {
-    path: '/404',
+    path: '/*',
     name: 'notfound',
     component: AppPage404,
   },
